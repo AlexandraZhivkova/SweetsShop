@@ -54,7 +54,7 @@ if (count($desserts) == 0) {
     echo ' <div class="d-flex flex-wrap justify-content-between">';
     foreach ($desserts as $dessert) {
         $fav_btn = $edit_delete_buttons = '';
-        if (isset($_SESSION['user_name'])) {
+        if (isset($_SESSION['user_name']) && !is_admin()) {
             if ($dessert['is_favourite'] == 1) {
                 $fav_btn = '
                         <div class="card-footer text-center">
