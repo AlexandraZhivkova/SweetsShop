@@ -85,7 +85,7 @@ if (count($desserts) == 0) {
         echo '
                 <div class="card mb-4" style="width: 18rem;">
                     ' . $edit_delete_buttons . '
-                    <img src="uploads/' . htmlspecialchars($dessert['image']) . '" class="card-img-top" alt="dessert Image">
+                    <img src="uploads/' . htmlspecialchars($dessert['image']) . '" class="card-img-top" height="60%" alt="dessert Image">
                     <div class="card-body">
                         <h5 class="card-title">' . htmlspecialchars($dessert['name']) . '</h5>
                         <p class="card-text">' . htmlspecialchars($dessert['price']) . '</p>

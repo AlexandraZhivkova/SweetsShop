@@ -198,7 +198,7 @@ if (!is_admin() && in_array($page, $admin_pages)) {
                         <?php
 
                         if (isset($_SESSION['user_name'])) {
-                            echo '<span class="text-white align-content-center">Здравейте, ' . htmlspecialchars($_SESSION['user_name']) . '</span>';
+                            echo '<span class="text-dark align-content-center">Здравейте, ' . htmlspecialchars($_SESSION['user_name']) . '</span>';
                             echo '
                                     <form method="POST" action="./handlers/handle_logout.php" class="m-0">
                                         <button type="submit" class="btn btn-dark btn-outline-light  align-content-center">
